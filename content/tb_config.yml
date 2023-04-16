@@ -5,9 +5,9 @@
 
 #######################################################################################
 # Book settings
-title                       : MyBook  # The title of the book. Will be placed in the left navbar.
-author                      : Author  # The author of the book
-copyright                   : "XXXX"  # Copyright year to be placed in the footer
+title                       : OPE Book Authoring Guide  # The title of the book. Will be placed in the left navbar.
+author                      : OPE Team  # The author of the book
+copyright                   : "2023"  # Copyright year to be placed in the footer
 logo                        : logo.png  # A path to the book logo
 only_build_toc_files        : true
 
