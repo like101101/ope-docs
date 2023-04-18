@@ -1,4 +1,4 @@
-# Open Education Template - developer’s guide
+# Open Education Template - Developer's Guide
 
 ## Introduction
 
@@ -33,3 +33,49 @@ The files associated with each will contain the two letters that appear in paren
 #### Important files
 
 - **Makefile:** The top level Makefile automates the tasks of building and publishing the book content. This includes the textbook, the lecture notes, and the lab manual. You can see a list of build targets by running the "Make" command in the same directory as the Makefile. 
+
+- **xx_config.yml:** This config file is used to change book settings such as: title, author, logo, URL to publish to, and jupyter extensions you would like enabled, etc.
+
+- **xx_toc.yml:** This file is used to modify the different sections of the book. In the section labeled parts, you can add a new section by specifying it's caption (name of section), whether it is numbered or not, and then you may specify the different sub sections within that section by specifying the files associated with that subsections content. 
+    - The caption name does not have to be the same name as the directory containing the content for that section (ex. part1 does not have to have the caption: 'part1')
+    - It is recommended to keep the different sections labeled part1, part2, part3, ..., as it is easier to keep track of the different sections. However, it is not required as long as the path to the file for the section has the correct directory listed.
+    - The basic layout for a section is as follows:
+    ```
+     - caption: 'Name of section'
+        numbered: true
+        chapters:
+        - file: directory/file
+    ```
+
+- **intro_xx.md:** This file is used to create the landing page for the textbook. The content within this file will be the first page displayed when accessing the textbook, lecture notes, or lab manual. 
+
+
+### Creating Content
+
+Now that you understand the layout of the template, you are ready to start creating content for the textbook.
+
+As was mentioned previously the xx_toc.yml file is used to specify the files that contain the content of the book. It is recommended to use ipynb format, as that will allow you to utilize the full power of the textbook. At the top of every ipynb file, you should include a code cell with the following line: 
+```
+%run -i ../python/common.py
+```
+
+This will enable powerful notebook functions such as: displaying a series of slide images, displaying html table, and displaying interactive terminal media player, just to name a few.
+
+Following this you should specify a title for the subsection by creating a markdown cell and creating an h1 text element:
+```
+# Title
+```
+
+After this, you are able to freely add either code cells or markdown cells and they will be displayed in the same way they appear in the ipynb file.
+
+<!-- We utilize the make tool to efficiently build, run, tag and publish the container images.
+
+- **build** - builds the custom container image
+- **push** - append timestamp to current image and push to private registry mentioned in private_registry:private_user files under base. 
+- **publish** - tag current image as ope_book_registry/ope_book_user/ope_book files under base directory along with a timestamp and push it like below.
+- **pull** - pull the most recent public image 
+- **pull-priv** - pulls the most recent private image 
+- **root** - executes the private image as root user like below. 
+- **user** - executes the private image as the default user 
+- **run** - starts published version with jupyter lab interface 
+- **run-priv** - starts private version with jupyter lab interface  -->

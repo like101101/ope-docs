@@ -11,9 +11,23 @@ parts:
   numbered: true
   chapters:
   - file: part2/ch1
-- caption: 'Creating New Textbooks'
+- caption: 'Creating New Textbook'
   numbered: true
   chapters:
   - file: part3/ch1
   - file: part3/ch2
-
+  - file: part3/ch3
+- caption: 'Creating New Container Image'
+  numbered: true
+  chapters:
+  - file: part4/ch1
+  - file: part4/ch2
+  - file: part4/ch3
+- caption: 'Future Work'
+  numbered: true
+  chapters:
+  - file: part5/ch1
+- caption: 'List of OPE Textbooks'
+  numbered: true
+  chapters:
+  - file: part6/ch1
