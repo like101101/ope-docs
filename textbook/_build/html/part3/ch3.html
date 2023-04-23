@@ -1,0 +1,919 @@
+
+
+<!DOCTYPE html>
+
+
+<html >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>7. Creating Content &#8212; OPE Book Authoring Guide</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script type="application/vnd.jupyter.widget-state+json">{"state": {"e6b9e4bb2f4b4550955181950ac6b360": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": "1px solid black", "border_left": "1px solid black", "border_right": "1px solid black", "border_top": "1px solid black", "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": "100%", "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "777047af9d3f45e89957df707b9ad0a0": {"model_name": "OutputModel", "model_module": "@jupyter-widgets/output", "model_module_version": "1.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/output", "_model_module_version": "1.0.0", "_model_name": "OutputModel", "_view_count": null, "_view_module": "@jupyter-widgets/output", "_view_module_version": "1.0.0", "_view_name": "OutputView", "layout": "IPY_MODEL_e6b9e4bb2f4b4550955181950ac6b360", "msg_id": "", "outputs": [{"output_type": "stream", "name": "stdout", "text": "$ hello\nbash: hello: command not found\r\n$ "}], "tabbable": null, "tooltip": null}}, "eabf2fd589c641ab87b14e3830738529": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": "1px solid black", "border_left": "1px solid black", "border_right": "1px solid black", "border_top": "1px solid black", "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": "10em", "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "40339b6a8ac04909b285d702fb55b04e": {"model_name": "OutputModel", "model_module": "@jupyter-widgets/output", "model_module_version": "1.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/output", "_model_module_version": "1.0.0", "_model_name": "OutputModel", "_view_count": null, "_view_module": "@jupyter-widgets/output", "_view_module_version": "1.0.0", "_view_name": "OutputView", "layout": "IPY_MODEL_eabf2fd589c641ab87b14e3830738529", "msg_id": "", "outputs": [{"output_type": "stream", "name": "stdout", "text": "$ man mkdir\r\nMKDIR(1)                         User Commands                        MKDIR(1)\r\n\r\nN\bNA\bAM\bME\bE\r\n       mkdir - make directories\r\n\r\nS\bSY\bYN\bNO\bOP\bPS\bSI\bIS\bS\r\n       m\bmk\bkd\bdi\bir\br [_\bO_\bP_\bT_\bI_\bO_\bN]... _\bD_\bI_\bR_\bE_\bC_\bT_\bO_\bR_\bY...\r\n\r\nD\bDE\bES\bSC\bCR\bRI\bIP\bPT\bTI\bIO\bON\bN\r\n       Create the DIRECTORY(ies), if they do not already exist.\r\n\r\n       Mandatory  arguments  to  long  options are mandatory for short options\r\n       too.\r\n\r\n       -\b-m\bm, -\b--\b-m\bmo\bod\bde\be=_\bM_\bO_\bD_\bE\r\n              set file mode (as in chmod), not a=rwx - umask\r\n\r\n       -\b-p\bp, -\b--\b-p\bpa\bar\bre\ben\bnt\bts\bs\r\n              no error if existing, make parent directories as needed\r\n\r\n       -\b-v\bv, -\b--\b-v\bve\ber\brb\bbo\bos\bse\be\r\n              print a message for each created directory\r\n\r\n       -\b-Z\bZ     set SELinux security context of each created  directory  to  the\r\n              default type\r\n\r\n       -\b--\b-c\bco\bon\bnt\bte\bex\bxt\bt[=_\bC_\bT_\bX]\r\n              like  -\b-Z\bZ,  or  if CTX is specified then set the SELinux or SMACK\r\n              security context to CTX\r\n\r\n       -\b--\b-h\bhe\bel\blp\bp display this help and exit\r\n\r\n       -\b--\b-v\bve\ber\brs\bsi\bio\bon\bn\r\n              output version information and exit\r\n\r\nA\bAU\bUT\bTH\bHO\bOR\bR\r\n       Written by David MacKenzie.\r\n\r\nR\bRE\bEP\bPO\bOR\bRT\bTI\bIN\bNG\bG B\bBU\bUG\bGS\bS\r\n       GNU coreutils online help: <https://www.gnu.org/software/coreutils/>\r\n       Report any translation bugs to <https://translationproject.org/team/>\r\n\r\nC\bCO\bOP\bPY\bYR\bRI\bIG\bGH\bHT\bT\r\n       Copyright \u00a9 2020 Free Software Foundation, Inc.   License  GPLv3+:  GNU\r\n       GPL version 3 or later <https://gnu.org/licenses/gpl.html>.\r\n       This  is  free  software:  you  are free to change and redistribute it.\r\n       There is NO WARRANTY, to the extent permitted by law.\r\n\r\nS\bSE\bEE\bE A\bAL\bLS\bSO\bO\r\n       mkdir(2)\r\n\r\n       Full documentation <https://www.gnu.org/software/coreutils/mkdir>\r\n       or available locally via: info '(coreutils) mkdir invocation'\r\n\r\nGNU coreutils 8.32               February 2022                        MKDIR(1)\r\n$ "}], "tabbable": null, "tooltip": null}}}, "version_major": 2, "version_minor": 0}</script>
+    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script crossorigin="anonymous" data-jupyter-widgets-cdn="https://cdn.jsdelivr.net/npm/" src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'part3/ch3';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="14. Initial Setup" href="../part4/ch1.html" />
+    <link rel="prev" title="6. Understanding Layout" href="ch2.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="None"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../intro_tb.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro_tb.html">
+                    OPE Book Authoring Guide
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../part1/ch1.html">1. What is the Open Education (OPE) project?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part1/ch2.html">2. What is the goal of OPE?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part1/ch3.html">3. How can you use OPE?</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">The Big Picture</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../part2/ch1.html">4. Active OPE Repository Map</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Creating New Textbook</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="ch1.html">5. Initial Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ch2.html">6. Understanding Layout</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">7. Creating Content</a></li>
+
+
+
+
+
+
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Creating New Container Image</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../part4/ch1.html">14. Initial Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part4/ch2.html">15. Customizing Image</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part4/ch3.html">16. Building and Publishing Image</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Future Work</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../part5/ch1.html">17. Future Work</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">List of OPE Textbooks</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../part6/ch1.html">18. Textbooks</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://jupyterhub-opf-jupyterhub.apps.smaug.na.operate-first.cloud/hub/user-redirect/git-pull?repo=https%3A//github.com/jappavoo/coursecontenttemplate&urlpath=lab/tree/coursecontenttemplate/content/part3/ch3.ipynb&branch=main" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onJupyterHub"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="../_static/images/logo_jupyterhub.svg">
+  </span>
+<span class="btn__text-container">JupyterHub</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/jappavoo/coursecontenttemplate" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/jappavoo/coursecontenttemplate/edit/main/content/part3/ch3.ipynb" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/jappavoo/coursecontenttemplate/issues/new?title=Issue%20on%20page%20%2Fpart3/ch3.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/part3/ch3.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Creating Content</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">7. Creating Content</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#special-displays">7.1. Special Displays</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-sample-image-that-use-customized-styles">7.1.1. A sample image that use customized styles</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#display-string-in-customized-styles">7.1.2. Display string in customized styles</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#display-terminal-shell-command-results">7.1.3. Display terminal shell command results</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#display-bash-command-in-customized-styles">7.1.4. Display bash command in customized styles</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#use-html-and-css-to-customize-styles">7.1.5. Use HTML and CSS to customize styles</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-slidedeck">7.2. Example Slidedeck</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#blank">7.3. Blank</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#image-only">7.4. Image only</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#left-bullets-and-image">7.5. Left Bullets and Image</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#title">8. Title</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#right-bullets-and-image">8.1. Right Bullets and Image</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">9. Title</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#two-column-image">9.1. Two Column Image</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">10. Title</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bullets">10.1. Bullets</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">11. Title</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#two-column-bullets">11.1. Two Column Bullets</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">12. Title</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#title-slide">12.1. Title Slide</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">13. Title</a></li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="creating-content">
+<h1><span class="section-number">7. </span>Creating Content<a class="headerlink" href="#creating-content" title="Permalink to this headline">#</a></h1>
+<p>Now that you understand the layout of the template, you are ready to start creating content for the textbook.</p>
+<p>As was mentioned previously the xx_toc.yml file is used to specify the files that contain the content of the book. It is recommended to use ipynb format, as that will allow you to utilize the full power of the textbook. At the top of every ipynb file, you should include a code cell with the following line:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="n">run</span> <span class="o">-</span><span class="n">i</span> <span class="o">../</span><span class="n">python</span><span class="o">/</span><span class="n">common</span><span class="o">.</span><span class="n">py</span>
+</pre></div>
+</div>
+<p>This will enable powerful notebook functions such as: displaying a series of slide images, displaying html table, and displaying interactive terminal media player, just to name a few.</p>
+<p>Add cell tag: ‘remove-cell’, in order to not have this import cell displayed in your textbook html.</p>
+<p>Following this you should specify a title for the subsection by creating a markdown cell and creating an h1 text element:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Title</span>
+</pre></div>
+</div>
+<p>After this, you are able to freely add either code cells or markdown cells and they will be displayed in the same way they appear in the ipynb file.</p>
+<section id="special-displays">
+<h2><span class="section-number">7.1. </span>Special Displays<a class="headerlink" href="#special-displays" title="Permalink to this headline">#</a></h2>
+<section id="a-sample-image-that-use-customized-styles">
+<h3><span class="section-number">7.1.1. </span>A sample image that use customized styles<a class="headerlink" href="#a-sample-image-that-use-customized-styles" title="Permalink to this headline">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="n">htmlFig</span><span class="p">(</span><span class="s2">&quot;../images/src/sample-image.jpg&quot;</span><span class="p">,</span> 
+              <span class="n">align</span><span class="o">=</span><span class="s2">&quot;left&quot;</span><span class="p">,</span> 
+              <span class="n">margin</span><span class="o">=</span><span class="s2">&quot;auto 3em 0 auto&quot;</span><span class="p">,</span> 
+              <span class="n">width</span><span class="o">=</span><span class="s2">&quot;100%&quot;</span><span class="p">,</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;fig:vnm&quot;</span><span class="p">,</span> 
+             <span class="n">caption</span><span class="o">=</span><span class="s2">&quot;Figure: A Sample Image that use special style&quot;</span><span class="p">)))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<!-- produced by: 
+htmlFig("[{'src': '../images/src/sample-image.jpg'}]", 
+        id="fig:vnm", 
+        align="left", 
+        width="100%",
+        margin="auto 3em 0 auto",
+        caption="Figure: A Sample Image that use special style", 
+        captionalign="left")
+-->
+<table id="fig:vnm" align="left" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse; margin: auto 3em 0 auto">
+    <tr style="padding: 0; margin: 0;"> 
+        <td colspan="1" width="100%" style="padding: 0; margin: 0 0 0 0; background-color:inherit;">
+            <div style="padding: 0; margin: 0 0 0 0;">
+              <figure style="padding: 0; margin: 0 0 0 0; width:100%;">
+                   <img src="../images/src/sample-image.jpg" width="100%" style="padding: 0; margin: 0;">
+                </figure>
+            </div>
+        </td>
+    </tr>
+    <caption align="bottom" style="text-align: left; padding: 0; margin: 0;" >
+          <i>Figure: A Sample Image that use special style</i> 
+    </caption>
+</table>
+</div>
+</div>
+</section>
+<section id="display-string-in-customized-styles">
+<h3><span class="section-number">7.1.2. </span>Display string in customized styles<a class="headerlink" href="#display-string-in-customized-styles" title="Permalink to this headline">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">X</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">uint8</span><span class="p">(</span><span class="mh">0xae</span><span class="p">)</span>
+<span class="n">XL</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">bitwise_and</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="mh">0xf</span><span class="p">)</span>
+<span class="n">XH</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">bitwise_and</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">right_shift</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="mi">4</span><span class="p">),</span><span class="mh">0xf</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">displayStr</span><span class="p">(</span><span class="s2">&quot;0b10101110 = 0x&quot;</span><span class="o">+</span><span class="nb">format</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="s2">&quot;02X&quot;</span><span class="p">),</span> <span class="n">size</span><span class="o">=</span><span class="s2">&quot;4em&quot;</span><span class="p">,</span> <span class="n">align</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div style="font-size: 4em;" align="center">
+0b10101110 = 0xAE
+</div>
+</div>
+</div>
+</section>
+<section id="display-terminal-shell-command-results">
+<h3><span class="section-number">7.1.3. </span>Display terminal shell command results<a class="headerlink" href="#display-terminal-shell-command-results" title="Permalink to this headline">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">TermShellCmd</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">{"version_major": 2, "version_minor": 0, "model_id": "777047af9d3f45e89957df707b9ad0a0"}</script></div>
+</div>
+</section>
+<section id="display-bash-command-in-customized-styles">
+<h3><span class="section-number">7.1.4. </span>Display bash command in customized styles<a class="headerlink" href="#display-bash-command-in-customized-styles" title="Permalink to this headline">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">bash</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="s2">&quot;man mkdir&quot;</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="s2">&quot;10em&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">{"version_major": 2, "version_minor": 0, "model_id": "40339b6a8ac04909b285d702fb55b04e"}</script></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">del</span> <span class="n">bash</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="use-html-and-css-to-customize-styles">
+<h3><span class="section-number">7.1.5. </span>Use HTML and CSS to customize styles<a class="headerlink" href="#use-html-and-css-to-customize-styles" title="Permalink to this headline">#</a></h3>
+<p>This is the example of image overlapping with backgrounds.</p>
+<blockquote>
+<div><p><a class="reference internal" href="../_images/logo.png"><img alt="../_images/logo.png" class="align-left" src="../_images/logo.png" style="width: 60px;" /></a> <p style="background-color:powderblue;">
+<em>This is some sample texts.</em>: This is some sample texts.This is some sample texts.This is some sample texts. This is some sample texts. This is some sample texts. This is some sample texts. This is some sample texts. This is some sample texts. This is some sample texts. This is some sample texts. This is some sample texts. This is some sample texts. This is some sample texts. This is some sample texts. This is some sample texts. This is some sample texts. This is some sample texts. This is some sample texts. This is some sample texts. This is some sample texts.
+<a class="reference internal" href="../_images/logo.png"><img alt="../_images/logo.png" class="align-right" src="../_images/logo.png" style="width: 60px;" /></a></p>
+</div></blockquote>
+</p></section>
+</section>
+<section id="example-slidedeck">
+<h2><span class="section-number">7.2. </span>Example Slidedeck<a class="headerlink" href="#example-slidedeck" title="Permalink to this headline">#</a></h2>
+<p>In this part of this book we will cover some cells that have special layouts in OPE RISE. It is recommended to verify the visual output using OPE RISE.</p>
+<p>The example slide deck is copied from the slide deck repo. Please make sure to sync with the source. If there’s any misalignment with the baseline, first refer to the slide deck repo to make sure the source code are the same.</p>
+<p>If there’s still problems exist, feel free to open an issue in either the slide deck repo or this ope repo.</p>
+</section>
+<section id="blank">
+<h2><span class="section-number">7.3. </span>Blank<a class="headerlink" href="#blank" title="Permalink to this headline">#</a></h2>
+<p><strong>BODY</strong></p>
+<p>We will try to illustrate single-column slides like this one.</p>
+<p><strong>NOTE</strong></p>
+<ul class="simple">
+<li><p>a Note that will display in the notes view</p></li>
+</ul>
+</section>
+<section id="image-only">
+<h2><span class="section-number">7.4. </span>Image only<a class="headerlink" href="#image-only" title="Permalink to this headline">#</a></h2>
+<p><strong>BODY</strong></p>
+<a class="reference internal image-reference" href="../_images/sample-image.jpg"><img alt="../_images/sample-image.jpg" src="../_images/sample-image.jpg" style="width: 100%;" /></a>
+</section>
+<section id="left-bullets-and-image">
+<h2><span class="section-number">7.5. </span>Left Bullets and Image<a class="headerlink" href="#left-bullets-and-image" title="Permalink to this headline">#</a></h2>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="title">
+<h1><span class="section-number">8. </span>Title<a class="headerlink" href="#title" title="Permalink to this headline">#</a></h1>
+<p><strong>BODY</strong></p>
+<table>
+  <tr>
+   <td width=“100%“>
+<p>Here is a <strong>left column</strong>:</p>
+<ul>
+<li><p>Something about figure</p></li>
+<li><p>Something else about it</p></li>
+<li><p>a long description</p>
+  </td>
+    <td>
+</li>
+</ul>
+<img alt="../_images/sample-image.jpg" class="align-right" src="../_images/sample-image.jpg" />
+<p><strong>NOTE</strong></p>
+<ul class="simple">
+<li><p>A simple example that has bullets on left of figure while using markdown</p></li>
+</ul>
+<section id="right-bullets-and-image">
+<h2><span class="section-number">8.1. </span>Right Bullets and Image<a class="headerlink" href="#right-bullets-and-image" title="Permalink to this headline">#</a></h2>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="id1">
+<h1><span class="section-number">9. </span>Title<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h1>
+<p><strong>BODY</strong></p>
+<table>
+<tr>
+   <td width="40%">
+      <img  src="../images/src/sample-image.jpg">
+    </td>
+   <td> 
+<p>Here is a <strong>right column</strong>:</p>
+<ul>
+<li><p>Something about figure</p></li>
+<li><p>Something else about it</p></li>
+<li><p>a long description</p>
+  </td>
+</li>
+</ul>
+</table> <p><strong>NOTE</strong></p>
+<ul class="simple">
+<li><p>A simple example that has texts on the right wrapping image on the left while using markdown</p></li>
+</ul>
+<section id="two-column-image">
+<h2><span class="section-number">9.1. </span>Two Column Image<a class="headerlink" href="#two-column-image" title="Permalink to this headline">#</a></h2>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="id2">
+<h1><span class="section-number">10. </span>Title<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h1>
+<table>
+<tr>
+   <td width="40%">
+      <img  src="../images/src/sample-image.jpg">
+    </td>
+   <td width="40%">
+      <img  src="../images/src/sample-image.jpg">
+    </td>
+<tr>
+   <td>
+<ul>
+<li><p>Something about figure,or a long description</p>
+  </td>
+  <td>
+</li>
+</ul>
+<p>-Something about figure,or a long description
+</td></p>
+</table><p><strong>NOTE</strong></p>
+<ul class="simple">
+<li><p>Using a table to control % of slide for both parts with larger image</p></li>
+</ul>
+<section id="bullets">
+<h2><span class="section-number">10.1. </span>Bullets<a class="headerlink" href="#bullets" title="Permalink to this headline">#</a></h2>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="id3">
+<h1><span class="section-number">11. </span>Title<a class="headerlink" href="#id3" title="Permalink to this headline">#</a></h1>
+<ul class="simple">
+<li><p><strong>Bullet 1:</strong> Something keypoints, and a long description</p></li>
+<li><p><strong>Bullet 2:</strong> Something keypoints, and a long description</p></li>
+<li><p><strong>Bullet 3:</strong> Something keypoints, and a long description</p></li>
+<li><p><strong>Bullet 4:</strong> Something keypoints, and a long description</p></li>
+</ul>
+<p><strong>NOTE</strong></p>
+<ul class="simple">
+<li><p>a Note that will display in the notes view</p></li>
+</ul>
+<section id="two-column-bullets">
+<h2><span class="section-number">11.1. </span>Two Column Bullets<a class="headerlink" href="#two-column-bullets" title="Permalink to this headline">#</a></h2>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="id4">
+<h1><span class="section-number">12. </span>Title<a class="headerlink" href="#id4" title="Permalink to this headline">#</a></h1>
+<table>
+<tr>
+   <td>
+<p><strong>Left Column:</strong></p>
+<ul>
+<li><p>Bullet 1: Something keypoints, and a long description</p></li>
+<li><p>Bullet 2: Something keypoints, and a long description</p></li>
+<li><p>a long description, a long description,a long description, a long description, a long description, a long description, a long description, a long description, a long description, a long description, a long description</p>
+  </td>
+ <td> 
+</li>
+</ul>
+<p><strong>Right Column:</strong></p>
+<ul>
+<li><p>Bullet 1: Something keypoints, and a long description</p></li>
+<li><p>Bullet 2: Something keypoints, and a long description</p></li>
+<li><p>a long description, a long description, a long description, a long description, a long description, a long description, a long description, a long description, a long description, a long description, a long description</p>
+  </td>
+</li>
+</ul>
+</table> <p><strong>NOTE</strong></p>
+<ul class="simple">
+<li><p>Using a table to control % of slide for both parts</p></li>
+</ul>
+<section id="title-slide">
+<h2><span class="section-number">12.1. </span>Title Slide<a class="headerlink" href="#title-slide" title="Permalink to this headline">#</a></h2>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="id5">
+<h1><span class="section-number">13. </span>Title<a class="headerlink" href="#id5" title="Permalink to this headline">#</a></h1>
+<p><strong>NOTE</strong></p>
+<ul class="simple">
+<li><p>a Note that will display in the notes view</p></li>
+</ul>
+<p>This is the end of the document.</p>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./part3"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="ch2.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">6. </span>Understanding Layout</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../part4/ch1.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">14. </span>Initial Setup</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">7. Creating Content</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#special-displays">7.1. Special Displays</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-sample-image-that-use-customized-styles">7.1.1. A sample image that use customized styles</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#display-string-in-customized-styles">7.1.2. Display string in customized styles</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#display-terminal-shell-command-results">7.1.3. Display terminal shell command results</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#display-bash-command-in-customized-styles">7.1.4. Display bash command in customized styles</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#use-html-and-css-to-customize-styles">7.1.5. Use HTML and CSS to customize styles</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-slidedeck">7.2. Example Slidedeck</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#blank">7.3. Blank</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#image-only">7.4. Image only</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#left-bullets-and-image">7.5. Left Bullets and Image</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#title">8. Title</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#right-bullets-and-image">8.1. Right Bullets and Image</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">9. Title</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#two-column-image">9.1. Two Column Image</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">10. Title</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bullets">10.1. Bullets</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">11. Title</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#two-column-bullets">11.1. Two Column Bullets</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">12. Title</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#title-slide">12.1. Title Slide</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">13. Title</a></li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By OPE Team
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
