@@ -431,6 +431,7 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="publishing-textbook">
 <h1><span class="section-number">8. </span>Publishing Textbook<a class="headerlink" href="#publishing-textbook" title="Permalink to this headline">#</a></h1>
+<p>OPE utilizes <a class="reference external" href="https://pages.github.com/">GitHub Pages</a> to allow you to easily deploy your website for free.</p>
 <p>First, make sure in the xx_config.yml files that the URL, path to book, and branch are all correct. An example for this textbook is:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">repository</span><span class="p">:</span>
   <span class="n">url</span><span class="p">:</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">IsaiahStapleton</span><span class="o">/</span><span class="n">ope</span><span class="o">-</span><span class="n">docubook</span>
@@ -446,8 +447,10 @@ document.write(`
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>make<span class="w"> </span>pub-xx
 </pre></div>
 </div>
-<p>After this has been done, there will be a new branch titled ‘gh-pages’ within your repository. Go to settings -&gt; pages and make sure under branch you are deplyoing GitHub pages from is the gh-pages branch. At the top of the page it will give you the URL of where the site is live. If you go to that link you may see a 404 error, that is because at the end of the URL you must add /textbook, /lecturenotes, or /labmanual to view each one respectively.</p>
-</section>
+<p>After this has been done, there will be a new branch titled ‘gh-pages’ within your repository. Go to settings -&gt; pages and make sure the branch you are deploying GitHub pages from is the gh-pages branch. At the top of the page it will give you the URL of where the site is live. If you go to that link you may see a 404 error, that is because at the end of the URL you must add /textbook, /lecturenotes, or /labmanual to view each one respectively.</p>
+<center>
+<img src="../images/src/part3ch4_pub.png" width=1200px> 
+</center></section>
 
     <script type="text/x-thebe-config">
     {
