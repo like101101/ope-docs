@@ -12,9 +12,10 @@ logo                        : logo.png  # A path to the book logo
 only_build_toc_files        : true
 
 repository:
-  url: https://github.com/jappavoo/UndertheCovers
-  path_to_book: underthecovers
+  url: https://github.com/IsaiahStapleton/ope-docubook
+  path_to_book: content
   branch: main
+
 
 html:
   use_repository_button: true
