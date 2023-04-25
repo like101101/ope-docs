@@ -17,6 +17,7 @@ parts:
   - file: part3/ch1
   - file: part3/ch2
   - file: part3/ch3
+  - file: part3/ch4
 - caption: 'Creating New Container Image'
   numbered: true
   chapters:
