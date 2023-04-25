@@ -152,7 +152,7 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="../intro_tb.html">
-                    OPE Book Authoring Guide
+                    OPE Docubook
                 </a>
             </li>
         </ul>
@@ -239,7 +239,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://jupyterhub-opf-jupyterhub.apps.smaug.na.operate-first.cloud/hub/user-redirect/git-pull?repo=https%3A//github.com/jappavoo/coursecontenttemplate&urlpath=lab/tree/coursecontenttemplate/content/part4/ch1.ipynb&branch=main" target="_blank"
+      <li><a href="https://jupyterhub-opf-jupyterhub.apps.smaug.na.operate-first.cloud/hub/user-redirect/git-pull?repo=https%3A//github.com/IsaiahStapleton/ope-docubook&urlpath=lab/tree/ope-docubook/content/part4/ch1.ipynb&branch=main" target="_blank"
    class="btn btn-sm dropdown-item"
    title="Launch onJupyterHub"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -270,7 +270,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/jappavoo/coursecontenttemplate" target="_blank"
+      <li><a href="https://github.com/IsaiahStapleton/ope-docubook" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Source repository"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -287,7 +287,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/jappavoo/coursecontenttemplate/edit/main/content/part4/ch1.ipynb" target="_blank"
+      <li><a href="https://github.com/IsaiahStapleton/ope-docubook/edit/main/content/part4/ch1.ipynb" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -304,7 +304,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/jappavoo/coursecontenttemplate/issues/new?title=Issue%20on%20page%20%2Fpart4/ch1.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/IsaiahStapleton/ope-docubook/issues/new?title=Issue%20on%20page%20%2Fpart4/ch1.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -430,41 +430,15 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="initial-setup">
 <h1><span class="section-number">8. </span>Initial Setup<a class="headerlink" href="#initial-setup" title="Permalink to this headline">#</a></h1>
-<p><span class="xref myst">This branch</span> contains the base template that can be built upon in order to create a custom container image that contains all the software needed to follow along with the course/textbook.</p>
-<ol class="arabic simple">
-<li><p>Choose the required base template i.e fedora or ubuntu based images. Clone the respective branch to your local
-repository.</p></li>
-<li><p>Update configurations related to target image registry, docker image tags etc. Add new layers to the Dockerfile to
-include additional libraries and other configurations to meet the requirements.</p></li>
-</ol>
-<ul class="simple">
-<li><p>Configure the resulting builder image tag:
-Update the respective files in the base folder to tag your builder image. The format is like below.</p></li>
-</ul>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ope_book_registry</span><span class="p">:</span><span class="n">private_user</span><span class="o">/</span><span class="n">ope_book</span><span class="o">/</span><span class="p">:</span><span class="n">stable</span><span class="o">-&lt;</span><span class="n">CUST</span><span class="o">&gt;</span>
-<span class="n">quay</span><span class="o">.</span><span class="n">io</span><span class="o">/&lt;</span><span class="n">user</span><span class="o">&gt;/</span><span class="n">ope_book_fedora</span><span class="p">:</span><span class="n">stable</span><span class="o">-</span><span class="n">dev</span>
+<p><a class="reference external" href="https://github.com/OPEFFORT/ope/tree/container-jupyter-docker-stacks">This branch</a> contains the source code to build the base image, which can then be built upon in order to create a custom container image that contains all the software needed to follow along with the textbook. Run the following commands to get started:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/OPEFFORT/ope.git
+
+<span class="nb">cd</span><span class="w"> </span>ope
+
+git<span class="w"> </span>checkout<span class="w"> </span>container-jupyter-docker-stacks
 </pre></div>
 </div>
-<ul class="simple">
-<li><p><strong>Customizing image:</strong>
-Customization includes all additional changes that are required in addition to the current image, to cater
-the requirements. It could be:</p>
-<ul>
-<li><p>Adding the additional system libraries</p></li>
-<li><p>New python libraries or updating the version of the current packages</p></li>
-<li><p>Enabling/disabling jupyter extensions</p></li>
-<li><p>Other configurations to the Dockerfile under stage-one or stage-two that best matches the need 3. Create new branches for every deploying environment like development, staging, test, production. Remember to
-update uid in the ope_uid file with that of the target environment user id.</p></li>
-</ul>
-</li>
-</ul>
-<ol class="arabic simple" start="4">
-<li><p>For any target environment say dev, build the docker image with the respective customization (CUST) option.
-make CUST=dev build
-This is start the docker image build and the final imagged will be tagged as:
-ope_book_registry:private_user/ope_book/:stable-<CUST>
-Export to docker image registries and make the repository publicly visible.</p></li>
-</ol>
+<p>Continue on to the following section to learn how you can customize the image.</p>
 </section>
 
     <script type="text/x-thebe-config">
