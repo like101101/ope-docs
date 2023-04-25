@@ -1,4 +1,4 @@
 Lecture Notes / Slides
 ==============================================
 
-This the lecture notes for the associated textbook of the same name.  
+Test Book lecture notes contains some special OPE RISE slides layouts that the Open Education Project supports.
