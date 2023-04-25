@@ -6,6 +6,12 @@ This document is intended to assist the jupyter notebook template developers in 
 
 The OPE project is an initiative towards making education open source, and to achieve highly interactive teaching and presentation material. 
 
+## View Published Docubook
+
+1. [Text Book](https://isaiahstapleton.github.io/ope-docubook/textbook/intro_tb.html)
+2. [Lecture Notes](https://isaiahstapleton.github.io/ope-docubook/lecturenotes/intro_ln.html)
+3. [Lab Manual](https://isaiahstapleton.github.io/ope-docubook/labmanual/intro_lm.html)
+
 ## Creating New Textbooks
 
 The OPE repository has a branch titled [coursecontenttemplate](https://github.com/OPEFFORT/ope/tree/coursecontenttemplate) that contains everything you need to start creating new OPE textbooks. First start by cloning the repository and then switching to the coursecontenttemplate branch by running the following commands:
