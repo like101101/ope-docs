@@ -365,10 +365,10 @@ def displayBytes(bytes=[[0x00]],
     warnings.filterwarnings('ignore')
     # if no row labels hide them
     if (len(labels)==0):
-        body.hide_index()
+        body.hide(axis='index')
     # if no column labels hide them 
     if (len(columns)==0):
-        body.hide_columns()
+        body.hide(axis='columns')
     del warnings
     # make body sticky header if present stay in place    
     body.set_sticky(axis=1)
