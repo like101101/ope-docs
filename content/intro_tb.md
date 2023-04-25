@@ -15,13 +15,14 @@ The material is broken down in to six parts:
     - 5. Initial Setup
     - 6. Understanding Layout
     - 7. Creating Content
+    - 8. Publishing textbook
 4. Creating New Container Image
-    - 8. Initial Setup
-    - 9. Customizing Image
-    - 10. Building and Publishing Image
+    - 9. Initial Setup
+    - 10. Customizing Image
+    - 11. Building and Publishing Image
 5. Future Work
-    - 11. Future Work
+    - 12. Future Work
 6. List of OPE Textbooks
-    - 11. Textbooks
+    - 13. Textbooks
 
 <!-- #endregion -->
