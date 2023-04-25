@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This document is intended to assist the jupyter notebook template developers in understanding and contributing to the templates.  <br>
+This book is intended to teach you how to author OPE-style textbooks, as well as setup container images that contain all the software required for following along with the textbook content. <br>
 
 The OPE project is an initiative towards making education open source, and to achieve highly interactive teaching and presentation material. 
 
