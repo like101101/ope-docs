@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>OPE Docubook &#8212; OPE Book Authoring Guide</title>
+    <title>OPE Documentation &#8212; OPE Documentation</title>
   
   
   
@@ -151,7 +151,7 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1 current active">
                 <a class="reference internal" href="#">
-                    OPE Docubook
+                    OPE Documentation
                 </a>
             </li>
         </ul>
@@ -239,7 +239,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/IsaiahStapleton/ope-docubook" target="_blank"
+      <li><a href="https://github.com/like101101/ope-docubook" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Source repository"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -256,7 +256,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/IsaiahStapleton/ope-docubook/edit/main/content/intro_tb.md" target="_blank"
+      <li><a href="https://github.com/like101101/ope-docubook/edit/main/content/intro_tb.md" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -273,7 +273,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/IsaiahStapleton/ope-docubook/issues/new?title=Issue%20on%20page%20%2Fintro_tb.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/like101101/ope-docubook/issues/new?title=Issue%20on%20page%20%2Fintro_tb.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -372,7 +372,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -383,11 +385,20 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>OPE Docubook</h1>
+    <h1>OPE Documentation</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#open-source-education-ope-overview">Open Source Education (OPE) Overview</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-ope">Why OPE?</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -398,9 +409,18 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <!-- #region -->
-<section class="tex2jax_ignore mathjax_ignore" id="ope-docubook">
-<h1>OPE Docubook<a class="headerlink" href="#ope-docubook" title="Permalink to this headline">#</a></h1>
-<p>In this book you will learn how to author OPE-style textbooks, as well as setup container images that contain all the software required for following along with the textbook content.</p>
+<section class="tex2jax_ignore mathjax_ignore" id="ope-documentation">
+<h1>OPE Documentation<a class="headerlink" href="#ope-documentation" title="Permalink to this headline">#</a></h1>
+<p>=====================================</p>
+<section id="open-source-education-ope-overview">
+<h2>Open Source Education (OPE) Overview<a class="headerlink" href="#open-source-education-ope-overview" title="Permalink to this headline">#</a></h2>
+<p>The open source movement has reshaped the way we think about computing and how we create, curate and run software. We believe that the tools and processes of open source can be brought to bear on the development and distribution of educational material that are not only openly available but who’s construction, source material and use begin and remain in the public domain.</p>
+<p>In this project so far we have developed an exemplar set of materials for an introductory computers systems class that exploits Jupyter, Jupyter Books, OpenShift and the the Mass Open Cloud to develop and deliver a unique educational experience for learning about how computer systems work.</p>
+<p>OPE leverages modern open source technologies to create an open environment and platform in which educators can create, publish, and operationalize high-quality open source materials, while students require no more than access to a web browser to access them. To achieve this, we have built an open ownership model that starts with high-performance, open data centers providing the hardware resources. This model allows us to exploit Linux and build a rich environment of tools and services to support a novel approach to educational material.</p>
+<p>This project has received support from the Red Hat Collaboratory Research Incubation Award program in 2022 and 2023 for the project titled Foundations in Open Source Education.</p>
+</section>
+<section id="why-ope">
+<h2>Why OPE?<a class="headerlink" href="#why-ope" title="Permalink to this headline">#</a></h2>
 <p>The material is broken down in to six parts:</p>
 <ol class="arabic simple">
 <li><p>Introduction</p>
@@ -481,6 +501,7 @@ document.write(`
 </li>
 </ol>
 <!-- #endregion -->
+</section>
 <div class="toctree-wrapper compound">
 </div>
 <div class="toctree-wrapper compound">
@@ -538,6 +559,21 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#open-source-education-ope-overview">Open Source Education (OPE) Overview</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-ope">Why OPE?</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
