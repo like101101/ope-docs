@@ -1,6 +1,4 @@
 <!-- #region -->
-# OPE Documentation
-=====================================
 
 ## Open Source Education (OPE) Overview
 
@@ -14,25 +12,14 @@ This project has received support from the Red Hat Collaboratory Research Incuba
 
 ## Why OPE?
 
-The material is broken down in to six parts: 
-1. Introduction
-    - 1. What is the Open Education (OPE) project?
-    - 2. What is the goal of OPE?
-    - 3. How can you use OPE?
-2. The Big Picture
-    - 4. Active OPE Repository Map
-3. Creating New Textbook
-    - 5. Initial Setup
-    - 6. Understanding Layout
-    - 7. Creating Content
-    - 8. Publishing textbook
-4. Creating New Container Image
-    - 9. Initial Setup
-    - 10. Customizing Image
-    - 11. Building and Publishing Image
-5. Future Work
-    - 12. Future Work
-6. List of OPE Textbooks
-    - 13. Textbooks
+#### Accessibility in Computer Science Education
+
+All users are granted unrestricted access to every feature of OPE, without incurring any costs. The entire spectrum of OPE functionalities are developed in open formats, and are hosted in public repositories to promote transparency and accessibility. Furthermore, the platform is deployed in a live and interactive manner, ensuring that users receive a seamless experience. From both the students' and educators' perspectives, the minimal requirement for accessing the full OPE experience is simply having access to a web browser.
+
+#### Unified and consistent content
+OPE mandates a uniform environment for all users that are in the same context, including students/learners and authors, to ensure consistency. Every user has access to identical software and packages, with the same versions, thereby eliminating the potential for issues to arise when working with disparate versions of software.
+
+#### Limitless Customization
+Customizing all features of OPE provides users with flexibility and the ability to tailor the platform based on the context of what will be teaching. The ability to customize OPE also ensures that the platform stays up-to-date and relevant, adapting to changes in technology. 
 
 <!-- #endregion -->
